@@ -1,0 +1,21 @@
+
+table {
+
+}
+
+label {
+
+    margin-top:15px;
+    margin-bottom:15px;
+    margin-right:10px;
+    margin-left:10px;
+}
+
+
+.odd {
+    background-color: blue;
+}
+
+.even {
+    background-color: green;
+}

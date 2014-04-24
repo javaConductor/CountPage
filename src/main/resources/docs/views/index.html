@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html  ng-app="SinglePageMath">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="/js/jquery/jquery-1.8.2.js" type="text/javascript" onerror="console.dir(arguments)">
+    </script>
+    <script src="/js/jquery/jquery-ui-1.9.1.custom.js" type="text/javascript" onerror="console.dir(arguments)">
+    </script>
+    <script src="/js/angular/angular.js" type="text/javascript" onerror="console.dir(arguments)">
+    </script>
+    <script src="/js/angular/angular-resource.js" type="text/javascript" onerror="console.dir(arguments)">
+    </script>
+    <script src="/js/app/app.js" type="text/javascript" onerror="console.dir(arguments)">
+    </script>
+    <title>Single App Math</title>
+</head>
+<body ng-controller="CountController" >
+<span>{{ elapsedTime }} ms</span>
+        <span  ng-init="clazzes=['even','odd']" ng-repeat="ans in answers" >
+               <label class="{{ clazzes[($index % 2)]}}" >
+                   {{$index+1}}.&nbsp;{{ans.message}}&nbsp;
+               </label>
+        </span>
+
+</body>
+</html>
